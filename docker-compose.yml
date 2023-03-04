@@ -5,15 +5,13 @@ services:
   app:
     build:
       dockerfile: build/Dockerfile-app
-#    build: .
     container_name: admin-app
     ports:
       - 5000:5000
-#      - 5000:5001
     logging:
       driver: gelf
       options:
-        gelf-address: 'tcp://192.168.26.1:12201' # 172.20.192.1
+        gelf-address: 'tcp://192.168.26.1:12201'
         tag: ada
     depends_on:
       - graylog
