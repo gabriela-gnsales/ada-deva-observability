@@ -76,5 +76,5 @@ def criptos():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")  # porta = 5000 -> http://127.0.0.1:5000/renda-fixa
+    app.run(host="0.0.0.0")  # porta = 5000
 
